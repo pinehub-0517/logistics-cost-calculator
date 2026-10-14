@@ -1,0 +1,9 @@
+# 모든 텍스트 파일의 줄바꿈을 LF로 통일 (Windows/Mac/Linux 협업 시 경고 방지)
+* text=auto eol=lf
+
+# 바이너리 파일
+*.png binary
+*.jpg binary
+*.ico binary
+*.woff binary
+*.woff2 binary
