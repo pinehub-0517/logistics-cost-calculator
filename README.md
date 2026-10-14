@@ -3,6 +3,8 @@
 운행거리(km), 차량 수, km당 운임을 입력하면 **총 운송비**, **운송비 절감액**, **절감률**을 즉시 계산해 보여주는 웹앱입니다.
 React + Vite + TypeScript로 만들어졌으며, 외부 데이터베이스나 API 없이 브라우저에서만 동작합니다.
 
+**배포 주소:** https://logistics-cost-calculator-pi.vercel.app
+
 ## 주요 기능
 
 - 운행거리(km) · 차량 수 · km당 운임 · 기존 km당 운임(비교 기준) 입력
@@ -70,7 +72,17 @@ logistics-cost-calculator/
         └── ResultPanel.tsx   # 결과 화면
 ```
 
-## Vercel 배포
+## 배포
+
+| 구분 | 주소 |
+| --- | --- |
+| 프로덕션 | https://logistics-cost-calculator-pi.vercel.app |
+| GitHub 저장소 | https://github.com/pinehub-0517/logistics-cost-calculator |
+
+이 프로젝트는 Vercel과 GitHub 저장소가 연결되어 있어 `main` 브랜치에 푸시하면 프로덕션에 자동 배포됩니다.
+다른 브랜치를 푸시하거나 Pull Request를 열면 미리보기 배포가 생성됩니다.
+
+### 직접 배포하는 방법 (새 프로젝트로 배포할 때)
 
 1. 이 프로젝트를 GitHub(또는 GitLab/Bitbucket) 저장소에 푸시합니다.
 2. [Vercel](https://vercel.com)에서 **Add New → Project**로 저장소를 가져옵니다.
@@ -80,11 +92,10 @@ logistics-cost-calculator/
    - Output Directory: `dist`
 4. **Deploy**를 누르면 배포가 완료됩니다.
 
-CLI로 배포하려면:
+CLI로 수동 배포하려면:
 
 ```bash
-npm i -g vercel
-vercel
+npx vercel deploy --prod
 ```
 
 환경 변수나 서버 설정은 필요하지 않습니다.
